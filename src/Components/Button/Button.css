@@ -1,0 +1,35 @@
+.button {
+    position: relative;
+    background-image: linear-gradient(to right, #59b4ec, #1f6188);
+    border-top-right-radius: 1.8rem;
+    border-bottom-left-radius: 1.8rem;
+    box-shadow: rgb(4, 62, 95) 0px 4px 0px 0px;
+    padding: 8px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 130px;
+    height: auto;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .button::before {
+    content: "";
+    background-color: rgb(50, 129, 248);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 700ms ease-in-out;
+    display: inline-block;
+  }
+  
+  .button:hover::before {
+    width: 100%;
+  }
